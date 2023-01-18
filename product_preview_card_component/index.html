@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="./style/output.css" rel="stylesheet">
+    <title>Tailwind css card</title>
+</head>
+<body>
+    <main class="flex flex-col items-center justify-center bg-paleYellow min-h-screen">
+        <div class="flex flex-col rounded-xl bg-white w-72 shadow-xl sm:w-3/6 md:flex-row my-10">
+            <div>
+                <img src="./images/image-product-mobile.jpg" alt="perfume bottle on a white surface" class="rounded-t-xl md:hidden h-max">
+                <img src="./images/image-product-desktop.jpg" alt="perfume bottle on a white surface" class="rounded-t-xl nmd:hidden sm:rounded-none sm:rounded-l-xl h-full">
+            </div>
+            <div class="flex flex-col m-4 space-y-3">
+                <h3 class="text-darkGrayishBlue tracking-widest font-montserrat text-sm">PERFUME</3>
+                <h1 class="font-fraunces text-2xl font-bold">Gabrielle Essence Eau de Parfum</h1>
+                <p class="font-montserrat text-darkGrayishBlue">
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the house of CHANEL.
+                </p>
+                <div class="flex flex-row">
+                    <h1 class="text-forestGreen font-fraunces font-bold text-2xl">
+                        $149.99
+                    </h1>
+                    <h4 class="font-fraunces line-through ml-4 mt-2 text-xs text-darkGrayishBlue">
+                        $169.99
+                    </h4>
+                </div>
+                <button class="bg-forestGreen rounded-xl text-center w-full h-12 font-bold font-montserrat text-white">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

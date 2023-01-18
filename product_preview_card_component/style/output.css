@@ -701,6 +701,10 @@ video {
   .md\:flex-row {
     flex-direction: row;
   }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 768px) {
